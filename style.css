@@ -32,7 +32,9 @@ h1 {
   padding-top: 120px;
   font-size: 7rem;
   font-weight: 300;
+  animation: fadeIn 2s ease;
 }
+
 h2 {
   text-transform: uppercase;
   padding-top: 10px;
@@ -130,5 +132,15 @@ footer {
 @media screen and (max-width: 960px) {
   h1 {
     padding-top: 60px;
+  }
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
   }
 }
